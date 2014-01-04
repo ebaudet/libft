@@ -13,13 +13,13 @@
 #include <stdlib.h>
 #include "libft.h"
 
-static int		ft_is_space(char c)
+static int	ft_is_space(char c)
 {
 	return (c == ' ' || c == '\n' || c == '\t' || c == '\r' || c == '\f'
 		|| c == '\v');
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	char	*res;
 	int		start;

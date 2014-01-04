@@ -12,23 +12,23 @@
 
 #include "libft.h"
 
-static int		ft_is_nb(char c)
+static int	ft_is_nb(char c)
 {
 	return (c >= '0' && c <= '9');
 }
 
-static int		ft_is_op(char c)
+static int	ft_is_op(char c)
 {
 	return (c == '-' || c == '+');
 }
 
-static int		ft_is_space(char c)
+static int	ft_is_space(char c)
 {
 	return (c == ' ' || c == '\n' || c == '\t' || c == '\r' || c == '\f'
 		|| c == '\v');
 }
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		val;
 	int		is_neg;

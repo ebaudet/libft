@@ -42,12 +42,12 @@ static char		**create_string(char **strnew, char const *s, char c)
 	return (strnew);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
-	int		i;
-	int		found;
-	int		nbstr;
-	char	**strnew;
+	int			i;
+	int			found;
+	int			nbstr;
+	char		**strnew;
 
 	i = 0;
 	nbstr = 0;
