@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
@@ -19,7 +20,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 
 	if (!s || !f)
 		return (NULL);
-	res = (char *) malloc(ft_strlen(s) * sizeof(*res));
+	res = (char *)malloc(ft_strlen(s) * sizeof(*res));
 	i = 0;
 	while (s[i])
 	{

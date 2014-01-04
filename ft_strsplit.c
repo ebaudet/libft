@@ -6,10 +6,11 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:53:20 by ebaudet           #+#    #+#             */
-/*   Updated: 2013/12/04 20:11:26 by ebaudet          ###   ########.fr       */
+/*   Updated: 2014/01/04 18:45:50 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static char		**create_string(char **strnew, char const *s, char c)
@@ -65,7 +66,7 @@ char	**ft_strsplit(char const *s, char c)
 		}
 		i++;
 	}
-	if (!(strnew = malloc(sizeof(char *) * (nbstr + 1))))
+	if (!(strnew = (char **)malloc(sizeof(char *) * (nbstr + 1))))
 		return (NULL);
 	return (create_string(strnew, s, c));
 }

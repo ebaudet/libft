@@ -20,7 +20,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	if (!s1 && !s2)
 		return (0);
-	else if (!s1 ||!s2)
+	else if (!s1 || !s2)
 		return (1);
 	ptr1 = (unsigned char *)s1;
 	ptr2 = (unsigned char *)s2;

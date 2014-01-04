@@ -6,10 +6,11 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:44:51 by ebaudet           #+#    #+#             */
-/*   Updated: 2013/11/19 16:44:51 by ebaudet          ###   ########.fr       */
+/*   Updated: 2014/01/04 18:42:41 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)

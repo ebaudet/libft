@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static int		ft_nbchar(int n)
@@ -31,7 +32,7 @@ static char		*ft_invnb(int n)
 	int		i;
 
 	i = 0;
-	str = (char *) malloc(12 * sizeof(char));
+	str = (char *)malloc(12 * sizeof(char));
 	if (n == 0)
 		str[i++] = '0';
 	while (n)
@@ -53,7 +54,7 @@ char			*ft_itoa(int n)
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	i = 0;
-	str = (char *) malloc(ft_nbchar(n) * sizeof(char));
+	str = (char *)malloc(ft_nbchar(n) * sizeof(char));
 	if (n < 0)
 	{
 		str[i++] = '-';

@@ -6,10 +6,11 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:54:42 by ebaudet           #+#    #+#             */
-/*   Updated: 2013/11/19 16:54:42 by ebaudet          ###   ########.fr       */
+/*   Updated: 2014/01/04 18:46:08 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static int		ft_is_space(char c)
