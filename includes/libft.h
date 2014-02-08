@@ -6,7 +6,7 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 11:44:10 by ebaudet           #+#    #+#             */
-/*   Updated: 2013/11/21 11:44:11 by ebaudet          ###   ########.fr       */
+/*   Updated: 2014/02/08 20:15:36 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 
 # include <string.h>
 
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list 	*next;
-}					t_list;
+# define BUFF_SIZE 32
 
+/*
+** functions part 1
+*/
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *s1, void const *s2, size_t n);
@@ -51,6 +49,9 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 
+/*
+** functions part 2
+*/
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
@@ -75,5 +76,10 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+/*
+** function bonus
+*/
+int		get_next_line(int const fd, char **line);
 
 #endif /* LIBFT_H */
