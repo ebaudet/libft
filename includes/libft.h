@@ -6,7 +6,7 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 11:44:10 by ebaudet           #+#    #+#             */
-/*   Updated: 2014/02/08 20:15:36 by ebaudet          ###   ########.fr       */
+/*   Updated: 2014/05/14 12:25:46 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,4 @@ void	ft_putnbr_fd(int n, int fd);
 */
 int		get_next_line(int const fd, char **line);
 
-#endif /* LIBFT_H */
+#endif
