@@ -21,6 +21,10 @@ void	ft_putnbr(int n)
 		ft_putnbr(n / 10);
 		ft_putnbr(n % 10);
 	}
+	else if (n == -2147483648)
+	{
+		ft_putstr("-2147483648");
+	}
 	else if (n < 0)
 	{
 		ft_putchar('-');
