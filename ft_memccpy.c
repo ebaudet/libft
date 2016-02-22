@@ -6,7 +6,7 @@
 /*   By: ebaudet <ebaudet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:42:15 by ebaudet           #+#    #+#             */
-/*   Updated: 2013/12/04 17:54:51 by ebaudet          ###   ########.fr       */
+/*   Updated: 2016/02/22 21:46:27 by ebaudet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memccpy(void *s1, void const *s2, int c, size_t n)
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;
 
-	if (!s1 || !s2)
-		return (NULL);
 	ptr1 = (unsigned char *)s1;
 	ptr2 = (unsigned char *)s2;
 	i = 0;
